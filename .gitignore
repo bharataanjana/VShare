@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+package-lock.json
+client/node_modules/
+server/node_modules/
+server/.package-lock.json
+
+# Build outputs
+client/dist/
+dist/
+
+# Environment and secrets
+.env
+*.env
+.env.local
+.env.*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# Editor & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Documentation files (requested by user)
+doc.md
+doc.docx
+
+# Media uploads (large video and chunk files)
+server/uploads/raw/*
+server/uploads/hls/*
+server/uploads/thumbnails/*
+!server/uploads/raw/.gitkeep
+!server/uploads/hls/.gitkeep
+!server/uploads/thumbnails/.gitkeep
